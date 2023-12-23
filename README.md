@@ -1,4 +1,4 @@
-# tpl-rust-function
+# Small Ant
 
 ## How to use it?
 
