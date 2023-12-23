@@ -13,6 +13,7 @@ git commit -m "📦 ${MESSAGE}"
 git tag -a ${TAG} -m "${MESSAGE}"
 git push origin ${TAG}
 
+export GH_TOKEN=${GITHUB_TOKEN}
 gh release create ${TAG} ${WASM_FILE} --title "${TITLE}" --notes "${MESSAGE}"
 
 # git tag -d ${TAG}
