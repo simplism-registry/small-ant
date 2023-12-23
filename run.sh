@@ -1,3 +1,4 @@
 #!/bin/bash
+set -o allexport; source .release.env; set +o allexport
 simplism listen \
-./target/wasm32-wasi/release/hello.wasm handle --http-port 8080 --log-level info
+${WASM_FILE} handle --http-port 8080 --log-level info
